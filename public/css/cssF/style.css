@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Kalam&display=swap');
+
+
+body{
+
+font-family: 'Cardo', serif;
+}
+a{
+    color:#000000 ;
+}
+a:hover{
+    color:#0a53be ;
+}
+.text-light-info{
+    color: #69DBEC ;
+}
+code{
+    font-size: 135% !important;
+    font-family: 'Kalam', cursive;
+}
+.navbar{
+    background-color: #232930eb !important;
+}
+.navbar-brand:hover{
+    text-shadow: 10px 10px 20px #fff,
+    -10px -10px 20px #fff;
+
+}
+.navbar li:hover{
+    padding-left: 10px;
+}
+.navbar-brand  .navbar li{
+    transition: 0.5s;
+}
+
+
+
+
+
+.fixedimg{
+    background-attachment: fixed;
+    background-size: cover;
+    height: 250px;
+}
+
+.fixedimg1{
+    background-image:url(file:///E:/mysite/imags/img1.jpg);
+}
+
+.fixedimg2{
+    background-image:url(file:///E:/mysite/imags/img3.jpg);
+}
+.mypadding{
+    padding-left: 170px !important;
+}
+
+footer{
+    margin-top: 50px;
+    padding:10px;
+    padding-bottom: 1px;
+    margin-bottom: -25px;
+}
+
+@media (max-width: 768px) {
+
+    code{
+        font-size: 110% !important;
+        font-weight: bold;
+    }
+
+}
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*="col"] {
+    margin-bottom:1rem;
+}
+
+.navbar .dropdown-menu {
+    border:none;
+    border-radius: 10px;
+    background-color:#000000!important;
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+
+    /* remove the padding from the navbar so the dropdown hover state is not broken */
+    .navbar {
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+
+    /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+    .navbar .nav-item {
+        padding:.5rem .5rem;
+        margin:0 .25rem;
+    }
+
+    /* makes the dropdown full width  */
+    .navbar .dropdown {position:static;}
+
+    .navbar .dropdown-menu {
+        width:60%;
+        left:250px;
+        right:0;
+        /*  height of nav-item  */
+        top:50px;
+
+        display:block;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s linear;
+
+    }
+
+
+
+
+    /* shows the dropdown menu on hover */
+    .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+        display:block;
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s, opacity 0.3s linear;
+    }
+
+    .navbar .dropdown-menu {
+        border: 1px solid rgba(0,0,0,.15);
+        background-color: #000000;
+    }
+
+}
+
+.card-hidden{
+    visibility: hidden;
+}
